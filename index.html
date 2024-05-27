@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <header> 
+        <div class="contenedor_logo">
+              <div class="logo">
+                    <p class="menor_que" id="blanco">&lt</p>
+                    <p class="codo_1" id="codo">codo</p>
+                    <p class="a" id="blanco">a</p>
+                    <p class="codo_2" id="codo">codo</p>
+                    <p class="mayor_que" id="blanco">/></p><br>
+                    <p class="m" id="violeta">M </p>
+                    <img src="https://img.icons8.com/?size=50&id=1427&format=png&color=FFFFFF" alt="">
+                    <P class="vie" id="violeta">VIE</P>
+              </div>
+        </div>
+        <div class="titulo_header">
+            <h1>Bienvenido</h1>
+        </div>    
+    </header>
+    <main>
+        <form action="">
+            <h2 class="titulo_formulario">Ingresar a mi cuenta</h2>
+<!-- Seccion superior formulario -->
+            <div class="contenedor_formulario">               
+                <div class="contenedor_input">                        
+                        <div class="input_usuario">
+                            <label>Ingrese su usuario o email</label><br>
+                            <input type="text" name="" id="usuario" placeholder="Ingrese su usuario" required>
+                        </div>
+                        <div class="svg">
+                            <img id="uicons_detail-img" src="https://cdn-icons.flaticon.com/svg/3917/3917688.svg?token=exp=1716039027~hmac=7d4a857d15f905b8a62ca3b9c9fbcba2  " width="20" height="20" alt="" title="" class="img-small">
+                        </div>
+                </div>
+                <div class="contenedor_input">
+                        <div class="input_contrasena">    
+                            <label>Ingrese su contraseña</label><br>
+                            <input type="password" name="" id="contrasena" placeholder="Ingrese su contraseña" required>
+                        </div>
+                        <div class="svg">
+                            <img id="uicons__detail-img" class="img-small" src="https://www.flaticon.es/svg/vstatic/svg/3914/3914475.svg?token=exp=1716038667~hmac=32a36b92386a488aae42716e80576c12" width="20" height="20" alt="key" title="key">
+                        </div>
+                </div>
+                <div class="botones">
+                    <button type="button" id="btn">Enviar</button>
+                </div>
+            </div>
+<!-- Seccion Inferior formulario -->
+            <div class="contenedor_formulario_footer">
+                    <div class=" registrarse">
+                        <h3>No tienes una cuenta?</h3>
+                        <a href="/Formulario registro CaC/index-formulario.html">Registrate</a>
+    
+                </div>
+            </div>
+                
+        </form>
+        <div class="contenedor_pop_up" id="contenedor_pop_up">
+              <div class="pop_up" id="pop_up">
+                    <h2  id="msj1">Ingreso no autorizado</h2>
+                    <p id="msj2">Si no posee una cuenta utilice <br>
+                        usuario : @admi <br>
+                        contraseña: @admi
+                    </p>
+                    <button class="cerrar_pop_up" id="cerrar_pop_up" onclick= cerrarPopUp()>Cerrar</button>
+                </div>   
+        </div>
+            
+        </div>
+    </main>
+    <footer></footer>
+    <script src="index-js.js"></script>
+</body>
+</html>

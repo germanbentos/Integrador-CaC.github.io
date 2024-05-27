@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baloo+2:wght@400..800&family=Boogaloo&family=DM+Serif+Display:ital@0;1&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(to bottom,rgb(122, 26, 141), transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    padding-top: 2rem;
+    gap: 252px;
+    border: none;
+}
+.contenedor_logo{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menor_que{
+    position: absolute;
+    top: -2px;
+    left: -16px;
+    font-size: 20px;
+}
+.codo_1{
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    font-size: 20px;
+    text-shadow: 0 0 4px #fcfcfc;
+    border: none;
+}
+.a{
+    position: absolute;
+    top: -4px;
+    left: 41px;
+    font-size: 20px;
+}
+.codo_2{
+    position: absolute;
+    top: -4px;
+    left: 52px;
+    text-shadow: 0 0 4px #fcfcfc;
+    font-size: 20px;
+}
+.mayor_que{
+    position: absolute;
+    top: -2px;
+    left: 94px;
+    font-size: 20px;
+
+}
+.m{
+    position: absolute;
+    top: 13px;
+    left: -10px;
+    font-size: 35px;
+    text-shadow: 0 0 4px #e503fa;
+}
+.logo img{
+    position: absolute;
+    top: 27px;
+    left: 22px;
+    width: 35px;
+}
+.vie{
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    font-size: 35px;
+    text-shadow: 0 0 4px #d907ec;
+}
+#codo{
+    color: rgb(49, 6, 47);
+}
+#violeta{
+    color: rgb(49, 6, 47);
+}
+#blanco{
+    color: rgb(245, 244, 244);
+}
+body{
+    background-size:cover; 
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/900/489/178/sunset-the-sun-the-evening-mountains-wallpaper-preview.jpg");
+}
+.registro{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0rem 5rem 0rem;
+    padding-top: 2rem;
+}
+.registro h1{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 350;
+    font-size: 55px;
+    color: antiquewhite;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+input{
+    width: 25rem;
+    height: 3rem;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    background-color: #ffff;
+}
+.svg{
+    position: relative;
+    left: -40px;
+    top: 13px;
+}
+.contenedor_formulario{
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    width: 30rem;
+    background-image: linear-gradient(to bottom,rgb(218, 217, 217), transparent);
+}
+.formulario_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.nombre, .apellido, .email, .contrasena{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Baloo 2",sans-serif;
+}
+
+/*menu desplegable*/
+
+.menu_desplegable{
+    width: 25rem;
+    height: 3rem;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_desplegable:hover{
+    box-shadow: 0px 5px 10px black;
+    border: 2px solid rgb(63, 63, 163);
+}
+.contenido_menu_desplegable h3{
+    color:  rgb(122, 105, 105);
+    font-family: "Baloo 2",sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+.menu_desplegable_svg{
+    cursor: pointer;
+    position: relative;
+    left: -13px;
+    top: 4px;
+}
+.opcion_paises{
+    width: 25rem;
+    max-height: 150px;
+    overflow: auto;
+    background-color: rgb(247, 245, 242);
+    display: none;
+}
+.opcion_paises.active{
+    display: block;
+    animation: animacion .3s forwards;
+}
+@keyframes animacion{
+    from{
+        transform: translateY(-200px) scale(.5);
+    }
+    to{
+        transform: translateY(0px) scale(1);
+    }
+}
+.paises{
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+}
+.paises:hover{
+    background-color: rgb(63, 63, 163);
+    color: antiquewhite;
+    transition: .2s ease all;
+}
+.pais{
+    display: flex;
+    gap: 25px;
+}
+.pais p{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+/* boton */
+
+.contenedor_btn{
+    display: flex;
+    justify-content: center;
+}
+.btn_enviar{
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 30px;
+    font-family: "Baloo 2",sans-serif;
+}
+.btn_enviar:hover{
+    box-shadow: 0px 0px 5px 5px rgb(221, 219, 221);
+    background-color: #83118d;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+/* enlace */
+
+.enlace{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: "Baloo 2", sans-serif;
+}
+.enlace:hover{
+    text-decoration: underline;
+    color: rgb(22, 211, 236);
+}
+.contenedor_pop_up_validacion, .contenedor_pop_up_registro {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+}    
+.pop_up_validacion, .pop_up_registro{
+    display: none;
+    position: relative;
+    inset: auto;
+    width: 430px;
+    height: 240px;
+    background-image: linear-gradient(to bottom,#14314e,#357fc7) ;
+    z-index: 15;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #dddada;
+    font-family: "Baloo 2",sans-serif;
+}
+.msj1, .msj2{
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    padding: 10px;
+    font-size: 27px;
+}
+
+.cerrar_pop_up{
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: "Baloo 2",sans-serif;
+}
+.cerrar_pop_up:hover{
+    box-shadow: 0px 0px 5px 5px rgb(221, 219, 221);
+    background-color: #83118d;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+
+
