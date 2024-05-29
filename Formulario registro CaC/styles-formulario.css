@@ -259,7 +259,7 @@ input{
     position: relative;
     inset: auto;
     width: 464px;
-    height: 255px;
+    height: 275px;
     background-image: linear-gradient(to bottom,#14314e,#357fc7) ;
     z-index: 15;
     gap: 15px;
@@ -268,6 +268,7 @@ input{
     flex-direction: column;
     color: #dddada;
     font-family: "Baloo 2",sans-serif;
+    text-align: center;
 }
 .msj1, .msj2{
     display: none;
